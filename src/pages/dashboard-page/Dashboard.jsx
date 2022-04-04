@@ -30,12 +30,14 @@ function Dashboard() {
   return (
     <div className="d-flex justify-content-center flex-wrap">
       {statistiques.map((statistique) => {
-        <div className="dashboard-card" >
-          <h4>
-            {statistique.title} <span>{statistique.count}</span>
-          </h4>
-          <p>{statistique.description}</p>
-        </div>;
+        return (
+          <div className="dashboard-card" key={statistique.id}>
+            <h4>
+              {statistique.title} <span>{statistique.count}</span>
+            </h4>
+            <p>{statistique.description}</p>
+          </div>
+        );
       })}
     </div>
   );
