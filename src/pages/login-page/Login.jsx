@@ -1,11 +1,11 @@
 import React from "react";
-import LoginStyle from "../../styles/pages/Login.module.scss";
+import LoginStyle from "../../styles/pages/Login.scss";
 import { AiFillLock } from "react-icons/ai";
 import { MdAlternateEmail } from "react-icons/md";
 
 function Login() {
   return (
-    <div className={["d-flex justify-content-center mt-5 p-4"].join(" ")}>
+    <div className={["d-flex justify-content-center p-4"].join(" ")}>
       <div className={"d-flex justify-content-between col-lg-10 main-card p-5"}>
         <div className="col-lg-5">
           <h3>Hello !</h3>

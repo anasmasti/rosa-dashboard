@@ -1,16 +1,10 @@
 @use "../helpers" as *;
 
-.cards-container {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 // Main card
 .main-card {
   position: relative;
-  background-color: color(blur-color);
+  // background-color: color(blur-color);
+  background: linear-gradient(to right, color(blur-color), color(dark-purple));
   width: 25rem;
   height: 35rem;
   box-shadow: $card-box-shadow;
@@ -18,85 +12,30 @@
   overflow: hidden;
   margin: 2rem;
   border-radius: $main-border-radius !important;
-  &:hover {
-    & .card--image {
-      transform: scale(1.2);
-    }
-    & .card--content {
-      top: 50%;
-    }
-    & .card--title {
-      display: none;
-    }
-  }
 }
 
-.card--header {
-  width: 100%;
-  height: 20%;
-  display: flex;
-  justify-content: center;
+.side-navbar-card{
+  position: relative;
+  // background-color: color(blur-color);
+  background: color(light);
+  width: 18rem;
+  height: 45rem;
+  box-shadow: $card-box-shadow;
   align-items: center;
-
-  & h3 {
-    color: color(dark-purple);
-    font-weight: 600;
-  }
-}
-
-.card--body {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card--description {
-  text-align: center;
-}
-
-.card--title {
-  position: absolute;
-  color: color(light);
-  bottom: 12px;
-  width: 100%;
-  text-align: center;
-}
-
-.card--image {
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
+  // margin: 2rem;
   border-radius: $main-border-radius !important;
-  object-fit: cover;
-  transition: all 1s;
 }
 
-.card--content {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  height: 20rem;
-  opacity: 0.8;
-  transition: all 1s;
-  background: color(dark-purple);
-  & h3 {
-    padding: 1rem;
-    margin-bottom: 0;
-    color: color(light);
-    width: 100%;
-    text-align: center;
-  }
-  & p {
-    color: color(light);
-  }
+.dashboard-card{
+  position: relative;
+  background: color(success);
+  width: 15rem;
+  height: 10rem;
+  box-shadow: $card-box-shadow;
+  align-items: center;
+  overflow: hidden;
+  margin: 2rem;
+  border-radius: $main-border-radius !important;
 }
 
-.overlay {
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(transparent, #00000094);
-  position: absolute;
-  top: 0;
-  border-radius: $main-border-radius;
-}

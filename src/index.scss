@@ -9,7 +9,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: color(body-color);
-  color: color(light) !important;
+  // background: #25254e !important;
+  color: color(dark) !important;
+  overflow: hidden;
 }
 
 code {

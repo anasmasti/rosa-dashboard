@@ -1,0 +1,23 @@
+@use "../helpers" as *;
+@use "../components" as *;
+
+.vertical_nav {
+  // background: color(light);
+  min-width: 17rem;
+  width: 18rem;
+  height: 100vh;
+  position: fixed;
+  left: 1.2rem;
+  bottom: auto;
+  top: 3rem;
+  // border-radius: $main-border-radius;
+  // box-shadow: $card-box-shadow;
+  transition: all 0.4s;
+  // overflow-y: scroll;
+}
+
+.active {
+    margin-left: -(18rem + 1.6rem);
+    transition: 1s ease-in-out;
+    // background-color: black ;
+  }

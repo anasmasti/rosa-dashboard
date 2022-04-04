@@ -1,0 +1,9 @@
+@use "../helpers" as *;
+
+.main_content{
+    // background: red;
+    width: calc(100vw - (16rem + 1.6rem));
+    display: flex;
+    justify-content: end;
+    margin-left: 270px;
+}
